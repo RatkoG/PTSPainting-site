@@ -15,9 +15,8 @@ html {
   column-gap: 3.6rem; }
 
 .header {
-  background-color: blueviolet;
   grid-column: full-start/full-end;
-  background-image: url(/dist/img/colors-containers-contemporary-1571174.jpg);
+  background-image: url(/img/colors-containers-contemporary-1571174.jpg);
   background-size: cover;
   background-position: bottom; }
 
