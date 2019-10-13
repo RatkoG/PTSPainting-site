@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-rows: 95vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [full-start]1fr [center-start]repeat(12, minmax(min-content, 6.2rem))[center-end] 1fr [full-end];
+  // grid-template-columns: 1fr repeat(12, 6.5rem) 1fr;
+  column-gap: 3.6rem;
+}
+
+// background: rgba(63, 63, 63, 0.40);
+// border: 1px solid #979797;
+// 61.3rem OVA E OD DESIGNO VISOCINATA
+// .header {
+//   background-color: red;
+//   grid-column: 1/-1;
+
+//   &__logo-box {
+//     grid-column: 2/4;
+//     display: block;
+//   }
+// }
+
+.header {
+  background-color: blueviolet;
+  grid-column: full-start/full-end;
+  background-image: url(/dist/img/colors-containers-contemporary-1571174.jpg);
+  // height: 95vh;
+  // background-image: linear-gradient(to right bottom,
+  //     rgba(137, 188, 254, 0.8),
+  //     rgba(43, 65, 112, 0.8)), url(../img/rockymountains-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.services {
+  background-color: blue;
+}
+
+.form {
+  background-color: forestgreen;
+}
+
+.about {
+  background-color: purple;
+}
+
+.gallery {
+  background-color: gray;
+}
+
+.footer {
+  background-color: orangered;
+}
+
+.form {
+  background-color: forestgreen;
+}
