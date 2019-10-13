@@ -3,56 +3,38 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 95vh min-content 40vw (min-content)[3];
-      grid-template-rows: 95vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
-      grid-template-rows: 95vh min-content 40vw repeat(3, min-content);
-  -ms-grid-columns: [full-start] 1fr [center-start] (minmax(min-content, 6.2rem))[12] [center-end] 1fr [full-end];
-      grid-template-columns: [full-start] 1fr [center-start] repeat(12, minmax(-webkit-min-content, 6.2rem)) [center-end] 1fr [full-end];
-      grid-template-columns: [full-start] 1fr [center-start] repeat(12, minmax(min-content, 6.2rem)) [center-end] 1fr [full-end];
-  -webkit-column-gap: 3.6rem;
-          column-gap: 3.6rem;
-}
+  grid-template-rows: 95vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, minmax(min-content, 6.2rem)) [center-end] 1fr [full-end];
+  column-gap: 3.6rem; }
 
 .header {
   background-color: blueviolet;
   grid-column: full-start/full-end;
   background-image: url(/dist/img/colors-containers-contemporary-1571174.jpg);
   background-size: cover;
-  background-position: bottom;
-}
+  background-position: bottom; }
 
 .services {
-  background-color: blue;
-}
+  background-color: blue; }
 
 .form {
-  background-color: forestgreen;
-}
+  background-color: forestgreen; }
 
 .about {
-  background-color: purple;
-}
+  background-color: purple; }
 
 .gallery {
-  background-color: gray;
-}
+  background-color: gray; }
 
 .footer {
-  background-color: orangered;
-}
+  background-color: orangered; }
 
 .form {
-  background-color: forestgreen;
-}
-/*# sourceMappingURL=main.css.map */
+  background-color: forestgreen; }
