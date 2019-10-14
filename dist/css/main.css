@@ -38,6 +38,13 @@ body {
   background-color: #39C36D;
   color: #E9E9E9; }
 
+.painter > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50rem;
+  z-index: 0; }
+
 .header {
   height: 60rem;
   background-image: linear-gradient(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8)), url(/img/colors-containers-contemporary-1571174.jpg);
@@ -52,7 +59,8 @@ body {
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    z-index: 5; }
 
 .navigation {
   display: flex;
