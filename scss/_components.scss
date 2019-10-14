@@ -1,0 +1,29 @@
+.heading {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  color: $headingText;
+  font-weight: 800;
+  // width: 60%;
+  margin-bottom: 6rem;
+}
+
+
+.btn {
+
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  &--green {
+    background-color: $btnGreen;
+    color: $textWhite;
+  }
+}
