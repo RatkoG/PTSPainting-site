@@ -71,7 +71,7 @@ body {
   font-size: 2.4rem;
   font-weight: 500;
   color: #292929;
-  margin-bottom: 1.5rem; }
+  margin: 1.5rem 0; }
 
 .services__list {
   display: inline-block;
@@ -132,4 +132,4 @@ body {
   background-color: orangered; }
 
 .form {
-  background-color: forestgreen; }
+  background-color: #F5F5F5; }
