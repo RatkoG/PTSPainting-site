@@ -36,7 +36,7 @@
     &:link,
     &:visited {
       font-size: 2rem;
-      display: inline-block;
+      // display: inline-block;
       font-weight: 500;
       padding: 1rem 2rem;
       color: $headingText;
@@ -51,12 +51,135 @@
   padding: 9rem 0;
 }
 
-.form {
-  background-color: forestgreen;
+.estimate__form {
+  background-color: $bgColor;
+  padding: 3.5rem 0;
+
+  .book {
+    .heading-tertiary {
+      text-transform: uppercase;
+      color: $colorPurple;
+      font-size: 1.7rem;
+      margin: 0;
+    }
+
+    .heading-secondary {
+      text-align: left;
+      color: $textColor;
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    &__form {
+      width: 50%;
+      font-family: inherit;
+      position: relative;
+      z-index: 5;
+
+      .form__label {
+        display: none;
+      }
+
+      // .parent {
+      //   display: grid;
+      //   grid-template-columns: repeat(4, 1fr);
+      //   grid-template-rows: repeat(3, 1fr);
+      //   grid-column-gap: 12px;
+      //   grid-row-gap: 12px;
+      //   }
+
+      //   .div1 { grid-area: 1 / 1 / 2 / 3; }
+      //   .div2 { grid-area: 1 / 3 / 2 / 5; }
+      //   .div3 { grid-area: 2 / 1 / 3 / 3; }
+      //   .div4 { grid-area: 2 / 3 / 3 / 5; }
+      //   .div5 { grid-area: 3 / 1 / 4 / 5; }
+
+      #estimate {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 1.2rem;
+
+        fieldset {
+          border: none;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          font-family: inherit;
+          font-size: 1.6rem;
+          padding: 1.5rem 2rem;
+          color: $textFormColor;
+          border-radius: 10px;
+          border: none;
+        }
+
+        fieldset:nth-child(5) {
+          grid-column: 3/-3;
+
+        }
+
+        textarea {
+          width: 100%;
+        }
+
+        .btn {
+          // text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1.5px;
+          padding: 1.2rem 5rem;
+          border: none;
+          border-radius: 10px;
+          transition: all .2s;
+          font-size: 1.6rem;
+        }
+      }
+
+      // contact textarea {
+      //     font-size: 1.5rem;
+      //     font-family: inherit;
+      //     color: 
+      // black;
+      // padding: 1.5rem 2rem;
+      // border-radius: 2px;
+      // background-color:
+      // #FBFBFD;
+      // border: none;
+      //     border-bottom-color: currentcolor;
+      //     border-bottom-style: none;
+      //     border-bottom-width: medium;
+      // border-bottom: 3px solid
+      // transparent;
+      // width: 100%;
+      // display: block;
+      // -webkit-transition: all .3s;
+      // transition: all .3s;
+    }
+  }
+
+  .worker {
+    position: absolute;
+    right: 0;
+    bottom: -3.5rem;
+    height: 120%;
+    z-index: 0;
+  }
 }
 
+
 .about {
-  background-color: purple;
+  padding: 9rem 0;
+
+  .paragraph {
+    padding: 0 15rem;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
 }
 
 .gallery {
@@ -65,8 +188,4 @@
 
 .footer {
   background-color: orangered;
-}
-
-.form {
-  background-color: $bgColor;
 }
