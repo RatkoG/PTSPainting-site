@@ -6,10 +6,23 @@ $shadow:0 10px 15px 0 rgba(0, 0, 0, 0.15);
 $bgColor: #F5F5F5;
 $textWhite:#E9E9E9;
 $textFormColor:#A3A3A3;
+// $linearGradient:(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 $linearGradient:(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8));
 $btnGreen:#39C36D;
 $colorPurple:#CE1791;
 
+// text-shadow: 0px 2px 2px #080808;
+// 0 1.5rem 4rem rgba(0, 0, 0, 0.15)
+// background: rgba(63,63,63,0.40);
+
+
+// MIXIN
+@mixin footerCenter {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 *,
 *::after,

@@ -22,9 +22,12 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  height: 7rem;
+  height: 10rem;
   align-items: center;
 
+  &__logo {
+    height: 100%;
+  }
 
   &__list {
     list-style: none;
