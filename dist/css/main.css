@@ -116,7 +116,7 @@ body {
 
 .header {
   height: 60rem;
-  background-image: linear-gradient(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8)), url(/img/colors-containers-contemporary-1571174.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/colors-containers-contemporary-1571174.jpg);
   background-size: cover;
   background-position: bottom;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15); }
@@ -262,5 +262,5 @@ body {
   display: block; }
 
 .footer {
-  background: linear-gradient(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8));
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   height: 15rem; }
