@@ -7,7 +7,8 @@ $bgColor: #F5F5F5;
 $textWhite:#E9E9E9;
 $textFormColor:#A3A3A3;
 $linearGradient:(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-// $linearGradient:(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8));
+// $linearGradientMenu:(to right bottom, rgba(194, 255, 84, 0.8), rgba(249, 208, 36, 0.8), rgba(239, 124, 48, 0.8), rgba(252, 49, 155, 0.8));
+$gradientMenu:(rgb(195, 255, 84), rgb(249, 208, 36), rgb(239, 124, 48), rgb(252, 49, 155));
 $btnGreen:#39C36D;
 $colorPurple:#CE1791;
 
@@ -15,6 +16,12 @@ $colorPurple:#CE1791;
 // 0 1.5rem 4rem rgba(0, 0, 0, 0.15)
 // background: rgba(63,63,63,0.40);
 
+// MEDIA QUERIES
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
 
 // MIXIN
 @mixin footerCenter {
