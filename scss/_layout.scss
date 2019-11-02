@@ -169,16 +169,10 @@
   &__photos {
     background-color: $bgColor;
     display: grid;
-<<<<<<< Updated upstream
     // grid-template-columns: repeat(8, 1fr);//!Ova e so imav
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-auto-rows: 27rem;
     grid-auto-flow: row dense;
-=======
-    // grid-template-columns: repeat(auto-fill, (8, 1fr));
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-template-rows: repeat(12, 100px);
->>>>>>> Stashed changes
     grid-gap: 1.5rem;
     padding: 1.5rem;
   }
@@ -202,7 +196,7 @@
 
     // }
 
-    &--5 {
+    &--7 {
       // grid-row: auto/span 3;
       grid-column: auto/span 2;
     }
@@ -215,16 +209,15 @@
     //   grid-row: auto/ span 2;
     // }
 
-    &--7 {
-      grid-column: auto/span 2;
-    }
+    // &--7 {
+    //   grid-column: auto/span 2;
+    // }
 
     // &--8 {
     //   grid-row: 4/span 4;
     //   grid-column: 3/span 4;
     // }
 
-<<<<<<< Updated upstream
 
     &--11 {
       grid-column: auto/span 2;
@@ -238,25 +231,6 @@
     display: block;
   }
 }
-=======
-  // &--9 {
-  //   grid-row: 4/span 4;
-  //   grid-column: 3/span 4;
-  // }
-  // &--10 {
-  //   grid-row: 4/span 4;
-  //   grid-column: 3/span 4;
-  // }
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-}
-
-
->>>>>>> Stashed changes
 
 
 
@@ -265,8 +239,12 @@
   height: 15rem;
 }
 
-
-
+// @media (min-width: 1000px) {
+//   . {
+//     grid-column: 1 / span 2;
+//     grid-row: span 1;
+//   }
+// }
 @media (max-width: 550px) {
   .gallery__photos {
     display: block;
