@@ -178,6 +178,7 @@
   }
 
   &__item {
+
     &--1 {
       grid-column: auto/ span 2;
     }
@@ -222,13 +223,18 @@
     &--11 {
       grid-column: auto/span 2;
     }
+
+    &:hover .gallery__img {
+      transform: scale(1.1);
+    }
   }
 
   &__img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transition: all 300ms ease-out;
   }
 }
 
