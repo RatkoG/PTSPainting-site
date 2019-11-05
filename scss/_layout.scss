@@ -50,9 +50,6 @@
   }
 }
 
-.services {
-  padding: 9rem 0;
-}
 
 .estimate__form {
   background-color: $bgColor;
@@ -70,7 +67,7 @@
       text-align: left;
       color: $textColor;
       font-size: 2.8rem;
-      margin-bottom: 1.5rem;
+      margin: 1.5rem 0;
       font-weight: 500;
       text-transform: capitalize;
     }
@@ -154,7 +151,6 @@
 
 
 .about {
-  padding: 9rem 0;
 
   .paragraph {
     padding: 0 15rem;
@@ -241,8 +237,49 @@
 
 
 .footer {
-  background: linear-gradient($linearGradient);
-  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__media {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+
+    &--link {
+      text-decoration: none;
+      border-radius: 50%;
+      width: 6.5rem;
+      height: 6.5rem;
+      cursor: pointer;
+      display: flex;
+      -moz-box-align: center;
+      align-items: center;
+      -moz-box-pack: center;
+      justify-content: center;
+      border: 2px solid $colorPurple;
+      margin: 0px 1.5rem;
+      transition: all 0.2s ease-out 0s;
+
+      &:hover {
+        background-color: $colorPurple;
+
+        .icons {
+          color: $textWhite;
+        }
+      }
+    }
+
+    .icons {
+      color: $textColor;
+      height: 3rem;
+      transition: color 0.2s ease-out 0s;
+    }
+  }
+
+  &__copyright {}
 }
 
 // @media (min-width: 1000px) {
