@@ -37,7 +37,7 @@
 }
 
 .heading-secondary {
-  margin-bottom: 8rem;
+  margin: 8rem 0;
   text-align: center;
   font-size: 3.8rem;
   font-weight: 800;
@@ -53,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 8rem;
   }
 
   &__card {
@@ -80,36 +81,35 @@
 }
 
 .footer {
-  .row {
+  &__phone {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    height: 100%;
-  }
+    width: 50rem;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
 
-  &__logo {
-    @include footerCenter;
-    height: 100%;
+    .or {
+      font-size: 1.2rem;
+      font-family: inherit;
+      text-transform: uppercase;
+      align-self: flex-end;
+    }
 
-    &--1 {
-      height: 50%;
+    .phone {
+      // text-transform: uppercase;
+      text-decoration: none;
+      font-size: 2rem;
+      color: $textColor;
+      font-family: 'open sans';
+      font-weight: 700;
+
     }
   }
 
   &__copyright {
-    height: 100%;
-    @include footerCenter;
-
-    &--text {
-      color: $textColor;
-      font-size: 1.2rem;
-    }
-  }
-
-  &__media {
-    height: 100%;
-    @include footerCenter;
-    justify-content: space-evenly;
-
+    font-weight: 800;
+    padding: 2rem;
+    font-size: 1.1rem;
+    color: $textColor;
+    text-transform: uppercase;
   }
 }
