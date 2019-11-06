@@ -24,15 +24,25 @@ body {
   font-weight: 800;
   margin-bottom: 6rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10px;
   transition: all .2s;
-  position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem); }
 
 .btn--green {
   background-color: #39C36D;
@@ -55,6 +65,38 @@ body {
   background-image: linear-gradient(-45deg, #FC319B 0%, #EF7C30 31%, #FAD024 70%, #F9D024 71%, #C2FF54 100%);
   color: transparent;
   -webkit-background-clip: text; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .modal__content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 2rem;
+    width: 70%;
+    animation-name: modalopen;
+    animation-duration: 1s; }
+
+.closeBtn {
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  cursor: pointer; }
+  .closeBtn:hover {
+    opacity: .7; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .services__cards {
   display: flex;
@@ -184,14 +226,6 @@ body {
         grid-column: 3/-3; }
       .estimate__form .book__form #estimate textarea {
         width: 100%; }
-      .estimate__form .book__form #estimate .btn {
-        text-decoration: none;
-        letter-spacing: 1.5px;
-        padding: 1.2rem 5rem;
-        border: none;
-        border-radius: 10px;
-        transition: all .2s;
-        font-size: 1.6rem; }
   .estimate__form .worker {
     position: absolute;
     right: 0;

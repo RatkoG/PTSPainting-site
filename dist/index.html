@@ -12,7 +12,34 @@
 </head>
 
 <body class="container">
+  <div id="modalForm" class="modal">
+    <div class="modal__content">
+      <span class="closeBtn">&times;</span>
+      <form action="#" id="estimate">
+        <fieldset>
+          <input type="text" name="Name" placeholder="First Name" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input type="text" name="LastName" placeholder="Last Name" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input type="email" name="Email" placeholder="Email" required>
+        </fieldset>
+        <fieldset>
+          <input type="phone" name="Phone" placeholder="Phone" required>
+        </fieldset>
+        <fieldset>
+          <textarea name="Message" id="" rows="5" placeholder="Tell us about your project..."></textarea>
+        </fieldset>
+        <fieldset>
+          <button class="btn btn--green btn--animated" name="submit" type="submit" id="contact-submit"
+            data-submit="...Sending"> Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
 
+  </div>
   <header class="header">
     <div class="row">
       <nav class="navigation">
@@ -29,7 +56,9 @@
           &amp; residential <br>
           professional painting
         </h1>
-        <a href="#book" class="btn btn--green btn--animated">Get a free estimate</a>
+        <button id="modalBtn" class="btn btn--green btn--animated">Get a free estimate</button>
+        <!-- JS FORM MODAL -->
+
 
       </div>
       <div class="painter">

@@ -10,22 +10,38 @@
 
 .btn {
 
+  &,
   &:link,
   &:visited {
+    position: relative;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10px;
     transition: all .2s;
-    position: relative;
     font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
   }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: $shadow;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+  }
+
 
   &--green {
     background-color: $btnGreen;
     color: $textWhite;
   }
+
 }
 
 .painter>img {
@@ -47,6 +63,51 @@
   color: transparent;
   -webkit-background-clip: text;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: $modalBg;
+
+  &__content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 2rem;
+    width: 70%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+}
+
+.closeBtn {
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 
 .services {
   &__cards {
