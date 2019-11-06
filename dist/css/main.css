@@ -48,7 +48,7 @@ body {
   background-color: #39C36D;
   color: #E9E9E9; }
 
-.painter > img {
+.painter {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -178,7 +178,7 @@ body {
   background-size: cover;
   background-position: bottom;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15); }
-  .header__text-box {
+  .header__hero--text {
     display: flex;
     align-items: center;
     justify-content: center;
