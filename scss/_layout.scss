@@ -81,37 +81,6 @@
       .form__label {
         display: none;
       }
-
-      #estimate {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-gap: 1.2rem;
-
-        fieldset {
-          border: none;
-        }
-
-        input,
-        textarea {
-          width: 100%;
-          font-family: inherit;
-          font-size: 1.6rem;
-          padding: 1.5rem 2rem;
-          color: $textFormColor;
-          border-radius: 10px;
-          border: none;
-        }
-
-        fieldset:nth-child(5) {
-          grid-column: 3/-3;
-
-        }
-
-        textarea {
-          width: 100%;
-        }
-      }
     }
   }
 
