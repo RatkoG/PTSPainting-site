@@ -262,18 +262,17 @@
     }
   }
 
-  //   .card__details ul li:not(:last-child) {
-  //     border-bottom: 1px solid
-  // #333;
-
-
-
   &__card {
     box-shadow: $shadow;
     border-radius: 10px;
     flex: 0 1 30%;
     padding: 2.5rem;
     transition: transform .5s;
+
+    &--svg {
+      height: 12rem;
+      width: 12rem;
+    }
 
     @media only screen and (max-width: $bp--small) {
       width: 60%;
