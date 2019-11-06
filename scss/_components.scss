@@ -10,22 +10,38 @@
 
 .btn {
 
+  &,
   &:link,
   &:visited {
+    position: relative;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10px;
     transition: all .2s;
-    position: relative;
     font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
   }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: $shadow;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+  }
+
 
   &--green {
     background-color: $btnGreen;
     color: $textWhite;
   }
+
 }
 
 .painter>img {
@@ -48,6 +64,81 @@
   -webkit-background-clip: text;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: $modalBg;
+
+  &__content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 2rem;
+    width: 70%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+}
+
+.closeBtn {
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.estimate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 1.2rem;
+
+  fieldset {
+    border: none;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    color: $textFormColor;
+    border-radius: 10px;
+    border: none;
+  }
+
+  fieldset:nth-child(5) {
+    grid-column: 3/-3;
+
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+
+
 .services {
   &__cards {
     display: flex;
@@ -61,6 +152,11 @@
     border-radius: 10px;
     flex: 0 1 30%;
     padding: 2.5rem;
+    transition: transform .5s;
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 }
 
