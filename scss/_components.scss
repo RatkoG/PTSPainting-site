@@ -50,6 +50,10 @@
   bottom: 0;
   height: 50rem;
   z-index: 0;
+
+  @media only screen and (max-width: $bp--smallest) {
+    display: none;
+  }
 }
 
 .heading-secondary {
@@ -62,6 +66,10 @@
   background-image: linear-gradient(-45deg, #FC319B 0%, #EF7C30 31%, #FAD024 70%, #F9D024 71%, #C2FF54 100%);
   color: transparent;
   -webkit-background-clip: text;
+
+  @media only screen and (max-width: $bp--smallest) {
+    margin: 6rem 0;
+  }
 }
 
 .modal {
@@ -145,7 +153,18 @@
     justify-content: space-between;
     text-align: center;
     margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp--small) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
+  //   .card__details ul li:not(:last-child) {
+  //     border-bottom: 1px solid
+  // #333;
+
+
 
   &__card {
     box-shadow: $shadow;
@@ -153,6 +172,14 @@
     flex: 0 1 30%;
     padding: 2.5rem;
     transition: transform .5s;
+
+    @media only screen and (max-width: $bp--small) {
+      width: 60%;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
 
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);

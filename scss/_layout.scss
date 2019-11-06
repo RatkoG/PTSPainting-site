@@ -16,6 +16,11 @@
     left: 30%;
     transform: translate(-50%, -50%);
     z-index: 5;
+
+    @media only screen and (max-width: $bp--medium) {
+      left: 50%;
+      width: 100%;
+    }
   }
 }
 
@@ -78,6 +83,10 @@
       position: relative;
       z-index: 5;
 
+      @media only screen and (max-width: $bp--smallest) {
+        width: 100%;
+      }
+
       .form__label {
         display: none;
       }
@@ -102,6 +111,10 @@
     font-size: 1.6rem;
     letter-spacing: 1.5px;
     font-weight: 500;
+
+    @media only screen and (max-width:$bp--smallest) {
+      padding: 0 2rem;
+    }
   }
 }
 
