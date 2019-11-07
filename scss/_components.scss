@@ -154,8 +154,13 @@
     padding: 2.5rem;
     transition: transform .5s;
 
+    &--svg {
+      width: 12rem;
+      height: 12rem;
+    }
+
     &:hover {
-      transform: translateY(-1.5rem) scale(1.03);
+      transform: translateY(-1.5rem);
     }
   }
 }
@@ -174,6 +179,12 @@
   list-style: none;
   font-size: 1.6rem;
   color: $textColor;
+
+  &>.services__item {
+    font-size: 1.8rem;
+    padding: .5rem;
+    line-height: 1.5;
+  }
 }
 
 .footer {
