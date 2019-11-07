@@ -270,6 +270,7 @@
     transition: transform .5s;
 
     &--svg {
+
       height: 12rem;
       width: 12rem;
     }
@@ -280,10 +281,14 @@
       &:not(:last-child) {
         margin-bottom: 3rem;
       }
+
+     // width: 12rem;
+      //height: 12rem;
+
     }
 
     &:hover {
-      transform: translateY(-1.5rem) scale(1.03);
+      transform: translateY(-1.5rem);
     }
   }
 }
@@ -302,6 +307,12 @@
   list-style: none;
   font-size: 1.6rem;
   color: $textColor;
+
+  &>.services__item {
+    font-size: 1.8rem;
+    padding: .5rem;
+    line-height: 1.5;
+  }
 }
 
 .footer {
@@ -309,7 +320,7 @@
     display: flex;
     width: 50rem;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
     .or {
       font-size: 1.2rem;
