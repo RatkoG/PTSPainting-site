@@ -131,8 +131,11 @@ body {
   flex: 0 1 30%;
   padding: 2.5rem;
   transition: transform .5s; }
+  .services__card--svg {
+    width: 12rem;
+    height: 12rem; }
   .services__card:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+    transform: translateY(-1.5rem); }
 
 .heading-tertiary {
   font-size: 2.4rem;
@@ -147,12 +150,16 @@ body {
   list-style: none;
   font-size: 1.6rem;
   color: #292929; }
+  .services__list > .services__item {
+    font-size: 1.8rem;
+    padding: .5rem;
+    line-height: 1.5; }
 
 .footer__phone {
   display: flex;
   width: 50rem;
   justify-content: space-evenly;
-  margin-bottom: 2rem; }
+  margin: 2rem 0; }
   .footer__phone .or {
     font-size: 1.2rem;
     font-family: inherit;
@@ -239,7 +246,7 @@ body {
 
 .paragraph {
   padding: 0 15rem;
-  text-align: center;
+  text-align: start;
   font-size: 1.6rem;
   letter-spacing: 1.5px;
   font-weight: 500; }
