@@ -159,7 +159,7 @@ body {
   display: flex;
   width: 50rem;
   justify-content: space-evenly;
-  margin-bottom: 2rem; }
+  margin: 2rem 0; }
   .footer__phone .or {
     font-size: 1.2rem;
     font-family: inherit;
