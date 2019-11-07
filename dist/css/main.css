@@ -220,7 +220,6 @@ body {
   padding: 2.5rem;
   transition: transform .5s; }
   .services__card--svg {
-
     height: 12rem;
     width: 12rem; }
   @media only screen and (max-width: 48.12em) {
@@ -228,9 +227,6 @@ body {
       width: 60%; }
       .services__card:not(:last-child) {
         margin-bottom: 3rem; } }
-
-  
-
   .services__card:hover {
     transform: translateY(-1.5rem); }
 
@@ -355,7 +351,7 @@ body {
   letter-spacing: 1.5px;
   font-weight: 500; }
   @media only screen and (max-width: 37.5em) {
-    .about .paragraph {
+    .paragraph {
       padding: 0 2rem; } }
 
 .gallery__photos {
