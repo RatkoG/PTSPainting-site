@@ -64,7 +64,9 @@
       width: 100%;
       top: 0;
       right: 0;
-      z-index: 100;
+      z-index: 50;
+      // opacity: 0;
+      transition: opacity .8s;
     }
 
     &__item {
@@ -97,23 +99,6 @@
       height: 5rem;
       opacity: 0;
 
-      &:checked+.hamburger__inner {
-        transform: rotate(45deg);
-        transition-delay: 0.12s;
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-
-        &::before {
-          top: 0;
-          opacity: 0;
-          transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-        }
-
-        &::after {
-          bottom: 0;
-          transform: rotate(-90deg);
-          transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-        }
-      }
     }
 
     &__button {
@@ -125,6 +110,7 @@
       top: 1.5rem;
       right: 1.5rem;
       z-index: 30;
+      box-shadow: $shadow;
     }
 
     &__background {
@@ -136,6 +122,7 @@
       right: 2rem;
       background-image: radial-gradient($radialG);
       z-index: 20;
+      transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     .hamburger {
@@ -143,7 +130,7 @@
       top: 2rem;
       right: 2rem;
       padding: 1rem;
-      z-index: 30;
+      z-index: 100;
       height: 6rem;
       width: 6rem;
       // background: linear-gradient($linearG);
@@ -218,15 +205,34 @@
         }
       }
 
+      &.is-active>.hamburger__inner {
+        transform: rotate(45deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &::before {
+          top: 0;
+          opacity: 0;
+          transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-90deg);
+          transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+      }
+
+
     }
 
-    &__checkbox:checked~&__background {
-      transform: scale(80);
-    }
+    // .is-active.navigation__background {
+    //   transform: scale(80);
+    // }
 
-    &__checkbox:checked~&__list {
-      display: flex;
-    }
+    // &__checkbox:checked~&__list {
+    //   display: flex;
+    // }
   }
 
 }
