@@ -304,10 +304,14 @@ body {
       transition-property: opacity, filter;
       transition-duration: 0.15s;
       transition-timing-function: linear; }
-      .navigation .hamburger .hamburger__inner {
-        background-color: #fff; }
-        .navigation .hamburger .hamburger__inner::before, .navigation .hamburger .hamburger__inner::after {
-          background-color: #fff; }
+      .navigation .hamburger__box {
+        display: inline-block;
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        background: white;
+        position: fixed;
+        border-radius: 50%; }
       .navigation .hamburger__inner {
         position: relative;
         width: 40px;
@@ -338,15 +342,15 @@ body {
         .navigation .hamburger__inner::after {
           bottom: -10px;
           transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-      .navigation .hamburger.is-active > .hamburger__inner {
+      .navigation .hamburger.is-active .hamburger__inner {
         transform: rotate(45deg);
         transition-delay: 0.12s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-        .navigation .hamburger.is-active > .hamburger__inner::before {
+        .navigation .hamburger.is-active .hamburger__inner::before {
           top: 0;
           opacity: 0;
           transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
-        .navigation .hamburger.is-active > .hamburger__inner::after {
+        .navigation .hamburger.is-active .hamburger__inner::after {
           bottom: 0;
           transform: rotate(-90deg);
           transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); } }

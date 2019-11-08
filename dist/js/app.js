@@ -35,6 +35,7 @@ function openMenu() {
     menuBg.style.transform = ' scale(0)'
     nav.style.display = "none";
     nav.style.opacity = "0";
+    nav.style.transition = "2s";
   }
 }
 // document.querySelector('.btn--green').addEventListener('click', function () {
