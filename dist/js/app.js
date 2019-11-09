@@ -4,11 +4,13 @@ const closeBtn = document.querySelector('.closeBtn');
 const hamburger = document.querySelector('.hamburger');
 const menuBg = document.querySelector('.navigation__background');
 const nav = document.querySelector('.navigation__list');
+const navLinks = document.querySelectorAll('.navigation__link')
 
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', clickOutside);
 hamburger.addEventListener('click', openMenu)
+navLinks.forEach(elem => elem.addEventListener('click', navbarLinkClick));
 
 function openModal() {
   modal.style.display = 'block';
@@ -38,6 +40,32 @@ function openMenu() {
     nav.style.transition = "2s";
   }
 }
-// document.querySelector('.btn--green').addEventListener('click', function () {
-//   console.log('Working');
-// });
+
+function navbarLinkClick(event) {
+  console.log("Working");
+  smootScroll(event)
+  if (hamburger.classList.contains('is-active')) {
+    hamburger.click();
+  }
+}
+
+// function smootScroll(event) {
+//   event.preventDefault();
+//   console.log(event.currentTarget);
+//   const targetId = event.target.getAttribute('href');
+//   console.log(targetId);
+//   window.scroll({
+//     top: document.querySelector(targetId).offsetTop,
+//     behavior: 'smooth'
+//   });
+// }
+function smootScroll(event) {
+  event.preventDefault();
+  console.log(event.currentTarget);
+  const targetId = event.target.getAttribute('href');
+  document.querySelector(targetId).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    // inline: 'nearest'
+  });
+};
