@@ -3,112 +3,11 @@
   text-transform: uppercase;
   color: $headingText;
   font-weight: 800;
-  // width: 60%;
   margin-bottom: 6rem;
+  text-shadow: $textShadow;
 }
 
-.hamburger {
-  position: fixed;
-  right: .5rem;
-  padding: 15px 15px;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  // font: inherit;
-  // color: inherit;
-  // text-transform: none;
-  background: red;
-  border: 0;
-  margin: 0;
-  overflow: visible;
-  z-index: 30;
 
-  &:hover {
-    opacity: .7;
-  }
-
-  &.is-active {
-    &:hover {
-      opacity: .7
-    }
-  }
-
-  .hamburger__inner {
-    background-color: #fff;
-
-    &::before,
-    &::after {
-      background-color: #fff;
-    }
-  }
-
-  &__box {
-    width: 4rem;
-    height: 4rem;
-    display: inline-block;
-    position: relative;
-  }
-
-  &__inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
-    width: 40px;
-    height: 4px;
-    background-color: black;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.075s;
-    transition-timing-function: ease;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      width: 40px;
-      height: 4px;
-      background-color: #000;
-      border-radius: 4px;
-      position: absolute;
-      transition-property: transform;
-      transition-duration: 0.15s;
-      transition-timing-function: ease;
-    }
-
-    &::before {
-      top: -10px;
-      transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-    }
-
-    &::after {
-      bottom: -10px;
-      transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-  }
-
-  &.is-active .hamburger__inner {
-    transform: rotate(45deg);
-    transition-delay: 0.12s;
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-
-    &::before {
-      top: 0;
-      opacity: 0;
-      transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-    }
-
-    &::after {
-      bottom: 0;
-      transform: rotate(-90deg);
-      transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  }
-}
 
 .btn {
 
@@ -282,7 +181,7 @@
         margin-bottom: 3rem;
       }
 
-     // width: 12rem;
+      // width: 12rem;
       //height: 12rem;
 
     }
