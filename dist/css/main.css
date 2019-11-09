@@ -29,7 +29,8 @@ body {
   text-transform: uppercase;
   color: #FAFAFA;
   font-weight: 800;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  text-shadow: 1px 1px 1px #000; }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
@@ -231,7 +232,8 @@ body {
     height: 100%; }
   .navigation__list {
     list-style: none;
-    display: flex; }
+    display: flex;
+    text-shadow: 1px 1px 1px #000; }
   .navigation__link:link, .navigation__link:visited {
     font-size: 2rem;
     font-weight: 500;
@@ -306,30 +308,27 @@ body {
       transition-timing-function: linear; }
       .navigation .hamburger__box {
         display: inline-block;
-        position: relative;
         width: 7rem;
         height: 7rem;
-        background: white;
+        background: #fff;
         position: fixed;
         border-radius: 50%; }
       .navigation .hamburger__inner {
         position: relative;
-        width: 40px;
-        display: flex;
-        height: 4px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
+        width: 30px;
+        height: 2px;
+        border-radius: 1px;
         background-color: black;
         transition-property: transform;
         transition-duration: 0.075s;
         transition-timing-function: ease;
-        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        z-index: 80; }
         .navigation .hamburger__inner::before, .navigation .hamburger__inner::after {
           content: "";
           display: block;
           width: 100%;
-          height: 4px;
+          height: 2px;
           background-color: #000;
           border-radius: 4px;
           position: absolute;
@@ -337,10 +336,10 @@ body {
           transition-duration: 0.15s;
           transition-timing-function: ease; }
         .navigation .hamburger__inner::before {
-          top: -10px;
+          top: -8px;
           transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
         .navigation .hamburger__inner::after {
-          bottom: -10px;
+          bottom: -8px;
           transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
       .navigation .hamburger.is-active .hamburger__inner {
         transform: rotate(45deg);
