@@ -376,6 +376,12 @@
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: $bp--smallest) {
+    .paragraph {
+      letter-spacing: 0;
+    }
+  }
+
   &__media {
     display: flex;
     -moz-box-align: center;

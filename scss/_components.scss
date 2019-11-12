@@ -239,6 +239,18 @@
     }
   }
 
+  &__email {
+    margin-bottom: 2rem;
+  }
+
+  &__logo {
+    height: 10rem;
+
+    &--1 {
+      height: 100%;
+    }
+  }
+
   &__copyright {
     font-weight: 800;
     padding: 2rem;

@@ -195,6 +195,14 @@ body {
     font-family: 'open sans';
     font-weight: 700; }
 
+.footer__email {
+  margin-bottom: 2rem; }
+
+.footer__logo {
+  height: 10rem; }
+  .footer__logo--1 {
+    height: 100%; }
+
 .footer__copyright {
   font-weight: 800;
   padding: 2rem;
@@ -428,6 +436,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .footer .paragraph {
+      letter-spacing: 0; } }
   .footer__media {
     display: flex;
     -moz-box-align: center;
