@@ -49,23 +49,12 @@ function navbarLinkClick(event) {
   }
 }
 
-// function smootScroll(event) {
-//   event.preventDefault();
-//   console.log(event.currentTarget);
-//   const targetId = event.target.getAttribute('href');
-//   console.log(targetId);
-//   window.scroll({
-//     top: document.querySelector(targetId).offsetTop,
-//     behavior: 'smooth'
-//   });
-// }
 function smootScroll(event) {
   event.preventDefault();
   console.log(event.currentTarget);
   const targetId = event.target.getAttribute('href');
   document.querySelector(targetId).scrollIntoView({
     behavior: 'smooth',
-    block: 'start',
-    // inline: 'nearest'
+    block: 'start'
   });
 };
