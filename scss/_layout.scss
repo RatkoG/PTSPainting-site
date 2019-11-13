@@ -1,5 +1,4 @@
 .header {
-  // height: 95vh;
   height: 60rem;
   background-image: linear-gradient($linearGradient), url(/img/colors-containers-contemporary-1571174.jpg);
   background-size: cover;
@@ -23,7 +22,6 @@
     }
   }
 }
-
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -66,7 +64,6 @@
       top: 0;
       right: 0;
       z-index: 50;
-      // opacity: 0;
       transition: opacity .8s;
     }
 
@@ -74,21 +71,16 @@
       text-align: center;
       margin: 2rem;
     }
-
     &__link {
-
       &:link,
       &:visited {
         display: inline-block;
         font-size: 3rem;
       }
-
       &:hover {
         color: $textColor;
       }
     }
-
-
 
     &__checkbox {
       position: fixed;
@@ -99,7 +91,6 @@
       width: 5rem;
       height: 5rem;
       opacity: 0;
-
     }
 
     &__button {
@@ -134,29 +125,13 @@
       z-index: 100;
       height: 6rem;
       width: 6rem;
-      // background: linear-gradient($linearG);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      // border-radius: 50%;
       transition-property: opacity, filter;
       transition-duration: 0.15s;
       transition-timing-function: linear;
-      // font: inherit;
-      // color: inherit;
-      // text-transform: none;
-      // border: 0;
-      // overflow: visible;
-
-      // .hamburger__inner {
-      //   background-color: #fff;
-
-      //   &::before,
-      //   &::after {
-      //     background-color: #fff;
-      //   }
-      // }
 
       &__box {
         display: inline-block;
@@ -172,11 +147,6 @@
         width: 30px;
         height: 2px;
         border-radius: 1px;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // ali top: 50%;
-        // margin-top: -2px;
         background-color: black;
         transition-property: transform;
         transition-duration: 0.075s;
@@ -277,12 +247,6 @@
   }
 }
 
-
-
-
-
-
-
 .paragraph {
   padding: 0 15rem;
   text-align: start;
@@ -314,47 +278,14 @@
       grid-column: auto/ span 2;
     }
 
-    //   &--2 {
-    //     grid-row: 1/span 3;
-    //     grid-column: 3/span 2;
-    //   }
-
-    //   &--3 {
-    //     grid-row: 6/span 3;
-    //     grid-column: 1/span 2;
-    //   }
-
-    // &--4 {
-
-    // }
 
     &--7 {
-      // grid-row: auto/span 3;
       grid-column: auto/span 2;
     }
-
-    //   &--6 {
-    //     grid-row: 8/ -1;
-    //     grid-column: 8/-1;
-    //   }
-    // &--6 {
-    //   grid-row: auto/ span 2;
-    // }
-
-    // &--7 {
-    //   grid-column: auto/span 2;
-    // }
-
-    // &--8 {
-    //   grid-row: 4/span 4;
-    //   grid-column: 3/span 4;
-    // }
-
 
     &--11 {
       grid-column: auto/span 2;
     }
-
     &:hover .gallery__img {
       transform: scale(1.1);
     }
@@ -368,8 +299,6 @@
     transition: all 300ms ease-out;
   }
 }
-
-
 
 .footer {
   display: flex;
@@ -420,13 +349,6 @@
     }
   }
 }
-
-// @media (min-width: 1000px) {
-//   . {
-//     grid-column: 1 / span 2;
-//     grid-row: span 1;
-//   }
-// }
 @media (max-width: 550px) {
   .gallery__photos {
     display: block;
@@ -435,8 +357,4 @@
   figure {
     margin-bottom: 1em;
   }
-
-  // figcaption {
-  //   font-size: .9em;
-  // }
 }
