@@ -1,7 +1,16 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify-es').default;
 const browserSync = require('browser-sync').create();
+
+gulp.task('uglify', function() {
+  return gulp.src('js/app.js')
+    // Minify the file
+    .pipe(uglify())
+    // Output
+    .pipe(gulp.dest('./dist/js'))
+});
 
 //*Ova vaka raboti
 gulp.task('copy', function () {
