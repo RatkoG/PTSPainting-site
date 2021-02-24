@@ -121,7 +121,7 @@
   grid-template-rows: repeat(4, auto);
   grid-gap: 1.2rem;
 
-  fieldset {
+  p {
     border: none;
   }
 
@@ -136,7 +136,7 @@
     border: none;
   }
 
-  fieldset:nth-child(5) {
+  p:nth-child(5) {
     grid-column: 3/-3;
 
   }
