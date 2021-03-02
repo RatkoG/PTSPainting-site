@@ -136,10 +136,10 @@
     border: none;
   }
 
-  p:nth-child(5) {
-    grid-column: 3/-3;
-
-  }
+  .estimate-text{
+  grid-column-start: 1;
+  grid-column-end: 3;
+ }
 
   textarea {
     width: 100%;

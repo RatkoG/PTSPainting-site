@@ -141,8 +141,9 @@ body {
     color: #A3A3A3;
     border-radius: 10px;
     border: none; }
-  .estimate p:nth-child(5) {
-    grid-column: 3/-3; }
+  .estimate .estimate-text {
+    grid-column-start: 1;
+    grid-column-end: 3; }
   .estimate textarea {
     width: 100%; }
 

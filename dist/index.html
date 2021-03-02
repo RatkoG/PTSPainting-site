@@ -44,7 +44,7 @@
         <p>
           <input class="input" type="phone" name="Phone" id="Phone" placeholder="Phone" required>
         </p>
-        <p>
+        <p class="estimate-text">
           <textarea name="Message" id="Message" rows="5" placeholder="Tell us about your project..."></textarea>
         </p>
         <p>
@@ -276,6 +276,7 @@
           <h3 class="heading-tertiary">Contact Us</h3>
           <h2 class="heading-secondary">Get A Free Estimate!</h2>
           <form class="estimate" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <p>
               <input class="input" type="text" name="Name" placeholder="First Name" required  >
             </p>
@@ -288,7 +289,7 @@
             <p>
               <input class="input" type="phone" name="Phone" placeholder="Phone" required>
             </p>
-            <p>
+            <p class="estimate-text">
               <textarea name="Message" id="" rows="5" placeholder="Tell us about your project..."></textarea>
             </p>
             <p>
